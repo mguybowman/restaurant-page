@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: rgb(255, 224, 157);
+}
+
+#content {
+    margin: 16px auto;
+    padding: 16px;
+    min-width: 368px;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+}
+
+.tab {
+    padding: 16px;
+    background-color: rgb(94, 27, 0);
+    color: white;
+}
+
+.tab:hover, .current {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+main {
+    padding: 16px;
+    background-color: white;
+}
+
+img {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+#menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+#menu div {
+    text-align: center;
+}
+
+#menu .item, #menu .description {
+    text-align: left;
+}
+
+#menu .item, #menu .price {
+    font-weight: bold;
+}
+
+#menu .spacer, #menu .description {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#menu .spacer {
+    height: 1em;
+}
+
+.copyright {
+    margin: 16px auto 0 auto;
+    font-size: 14px;
+    color: rgb(94, 27, 0);
+    text-align: center;
+}
